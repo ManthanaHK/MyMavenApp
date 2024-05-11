@@ -1,2 +1,3 @@
-FROM ubuntu:latest
-COPY target/*.war 
+FROM openjdk:17
+WORKDIR /app
+COPY target/*.war /app/
